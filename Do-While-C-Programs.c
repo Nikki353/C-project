@@ -42,8 +42,7 @@ Syntax: Ensure that there is a semicolon (;) after the closing parenthesis of th
 Example:
 Here's' a simple example to illustrate the do-while loop in action:
 
-c
-Copy code
+
 #include <stdio.h>
 
 int main() {
