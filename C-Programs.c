@@ -450,9 +450,7 @@ int main() {
 }
 
 
-
-
- ### Check if a number is a prime number:
+-------------------------------------Check if a number is a prime number:
 
 #include <stdio.h>
 #include <stdbool.h>
