@@ -647,7 +647,8 @@ int main()
     if (sum == num)
     {
         printf("%d is a perfect number.\n", num);
-    } else if (sum > num)
+    } 
+    else if (sum > num)
     {
         printf("%d is an abundant number.\n", num);
     }
