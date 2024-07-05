@@ -263,15 +263,18 @@ if(hin<35)
 Check if a number is even or odd:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int num;
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    if (num % 2 == 0) {
+    if (num % 2 == 0)
+    {
         printf("%d is even.\n", num);
-    } else {
+    }
+    else
+    {
         printf("%d is odd.\n", num);
     }
 
@@ -283,17 +286,23 @@ int main() {
 Check if a number is positive, negative, or zero:
 
 #include <stdio.h>
-
-int main() {
+int main() 
+{
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if (num > 0) {
+    if (num > 0)
+    {
         printf("%d is positive.\n", num);
-    } else if (num < 0) {
-        printf("%d is negative.\n", num);
-    } else {
+    }
+    else 
+    {
+         if (num < 0)
+	printf("%d is negative.\n", num);
+    } 
+    else
+    {
         printf("You entered zero.\n");
     }
 
@@ -305,15 +314,18 @@ int main() {
 Check if a person is eligible to vote (based on age):
 
 #include <stdio.h>
-
-int main() {
+int main() 
+{
     int age;
     printf("Enter your age: ");
     scanf("%d", &age);
 
-    if (age >= 18) {
+    if (age >= 18)
+    {
         printf("You are eligible to vote.\n");
-    } else {
+    }
+    else 
+    {
         printf("You are not eligible to vote yet.\n");
     }
 
@@ -325,17 +337,23 @@ int main() {
 Find the maximum of three numbers:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int num1, num2, num3;
     printf("Enter three numbers: ");
     scanf("%d %d %d", &num1, &num2, &num3);
 
-    if (num1 >= num2 && num1 >= num3) {
+    if (num1 >= num2 && num1 >= num3)
+    {
         printf("%d is the largest number.\n", num1);
-    } else if (num2 >= num1 && num2 >= num3) {
-        printf("%d is the largest number.\n", num2);
-    } else {
+    }
+    else  
+    {
+         if (num2 >= num1 && num2 >= num3)
+	 printf("%d is the largest number.\n", num2);
+    }
+    else
+    {
         printf("%d is the largest number.\n", num3);
     }
 
@@ -347,15 +365,18 @@ int main() {
 Check if a year is a leap year or not:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int year;
     printf("Enter a year: ");
     scanf("%d", &year);
 
-    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
         printf("%d is a leap year.\n", year);
-    } else {
+    } 
+    else 
+    {
         printf("%d is not a leap year.\n", year);
     }
 
@@ -367,16 +388,19 @@ int main() {
 Check if a character is a vowel or consonant:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     char ch;
     printf("Enter a character: ");
     scanf(" %c", &ch);
 
     if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
-        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+    {
         printf("%c is a vowel.\n", ch);
-    } else {
+    } 
+    else 
+    {
         printf("%c is a consonant.\n", ch);
     }
 
@@ -387,17 +411,23 @@ int main() {
 Check if a triangle is equilateral, isosceles, or scalene based on sides:
 
 #include <stdio.h>
-
-int main() {
+int main() 
+{
     int side1, side2, side3;
     printf("Enter three sides of a triangle: ");
     scanf("%d %d %d", &side1, &side2, &side3);
 
-    if (side1 == side2 && side2 == side3) {
+    if (side1 == side2 && side2 == side3) 
+    {
         printf("It is an equilateral triangle.\n");
-    } else if (side1 == side2 || side2 == side3 || side1 == side3) {
-        printf("It is an isosceles triangle.\n");
-    } else {
+    }
+    else 
+    {
+        if (side1 == side2 || side2 == side3 || side1 == side3)
+	printf("It is an isosceles triangle.\n");
+    } 
+    else 
+    {
         printf("It is a scalene triangle.\n");
     }
 
@@ -410,19 +440,25 @@ int main() {
 Check if a number is positive and even:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int num;
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    if (num > 0) {
-        if (num % 2 == 0) {
+    if (num > 0)
+    {
+        if (num % 2 == 0) 
+	{
             printf("%d is positive and even.\n", num);
-        } else {
+        }
+	else
+	{
             printf("%d is positive but odd.\n", num);
         }
-    } else {
+    }
+    else 
+    {
         printf("%d is not a positive number.\n", num);
     }
 
@@ -434,15 +470,18 @@ int main() {
 Check if a number is divisible by both 5 and 11:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int num;
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    if (num % 5 == 0 && num % 11 == 0) {
+    if (num % 5 == 0 && num % 11 == 0)
+    {
         printf("%d is divisible by both 5 and 11.\n", num);
-    } else {
+    }
+    else
+    {
         printf("%d is not divisible by both 5 and 11.\n", num);
     }
 
@@ -450,31 +489,37 @@ int main() {
 }
 
 
--------------------------------------Check if a number is a prime number:
+-------------------------------------Check if a number is a prime number:------------------------------------
 
 #include <stdio.h>
 #include <stdbool.h>
-
-bool isPrime(int num) {
-    if (num <= 1) {
+bool isPrime(int num) 
+{
+    if (num <= 1)
+    {
         return false;
     }
-    for (int i = 2; i * i <= num; ++i) {
-        if (num % i == 0) {
+    for (int i = 2; i * i <= num; ++i) 
+    {
+        if (num % i == 0)
+	{
             return false;
         }
     }
     return true;
 }
 
-int main() {
+int main() 
+{
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if (isPrime(num)) {
+    if (isPrime(num))
+    {
         printf("%d is a prime number.\n", num);
-    } else {
+    } else 
+    {
         printf("%d is not a prime number.\n", num);
     }
 
@@ -486,23 +531,32 @@ int main() {
 Check if a year is a leap year without using nested if-else:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int year;
     printf("Enter a year: ");
     scanf("%d", &year);
 
-    if (year % 4 == 0) {
-        if (year % 100 == 0) {
-            if (year % 400 == 0) {
+    if (year % 4 == 0)
+    {
+        if (year % 100 == 0) 
+	{
+            if (year % 400 == 0)
+	    {
                 printf("%d is a leap year.\n", year);
-            } else {
+            }
+	    else 
+	    {
                 printf("%d is not a leap year.\n", year);
             }
-        } else {
+        } 
+	else 
+	{
             printf("%d is a leap year.\n", year);
         }
-    } else {
+    }
+    else
+    {
         printf("%d is not a leap year.\n", year);
     }
 
@@ -515,13 +569,14 @@ int main() {
 Check if a number is positive, negative, or zero using a switch statement:
 
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    switch (num > 0 ? 1 : num < 0 ? -1 : 0) {
+    switch (num > 0 ? 1 : num < 0 ? -1 : 0) 
+    {
         case 1:
             printf("%d is positive.\n", num);
             break;
@@ -542,23 +597,27 @@ int main() {
 Check if a number is a palindrome:
 
 #include <stdio.h>
-
-int main() {
+int main() 
+{
     int num, reversedNum = 0, remainder, originalNum;
     printf("Enter an integer: ");
     scanf("%d", &num);
 
     originalNum = num;
 
-    while (num != 0) {
+    while (num != 0) 
+    {
         remainder = num % 10;
         reversedNum = reversedNum * 10 + remainder;
         num /= 10;
     }
 
-    if (originalNum == reversedNum) {
+    if (originalNum == reversedNum)
+    {
         printf("%d is a palindrome.\n", originalNum);
-    } else {
+    } 
+    else 
+    {
         printf("%d is not a palindrome.\n", originalNum);
     }
 
@@ -571,23 +630,29 @@ Check if a number is perfect, abundant, or deficient:
 
 
 #include <stdio.h>
-
-int main() {
+int main() 
+{
     int num, sum = 0;
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    for (int i = 1; i <= num / 2; ++i) {
-        if (num % i == 0) {
+    for (int i = 1; i <= num / 2; ++i)
+    {
+        if (num % i == 0)
+	{
             sum += i;
         }
     }
 
-    if (sum == num) {
+    if (sum == num)
+    {
         printf("%d is a perfect number.\n", num);
-    } else if (sum > num) {
+    } else if (sum > num)
+    {
         printf("%d is an abundant number.\n", num);
-    } else {
+    }
+    else
+    {
         printf("%d is a deficient number.\n", num);
     }
 
