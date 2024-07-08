@@ -1,18 +1,18 @@
 An overview of the ranges for different data types in C programming, along with explanations:
 
 1. Integer Data Types
+
 int: Typically 4 bytes (32 bits). The range depends on the compiler and system architecture (32-bit or 64-bit).
-
 Range: -2147483648 to 2147483647 (on most systems)
+    
 short: Usually 2 bytes (16 bits).
-
 Range: -32768 to 32767
+    
 long: Usually 4 bytes (32 bits) on 32-bit systems, and 8 bytes (64 bits) on 64-bit systems.
-
 Range: -2147483648 to 2147483647 on 32-bit systems
 Range: -9223372036854775808 to 9223372036854775807 on 64-bit systems
-long long: Guaranteed to be at least 8 bytes (64 bits).
 
+long long: Guaranteed to be at least 8 bytes (64 bits).
 Range: -9223372036854775808 to 9223372036854775807
 
 
