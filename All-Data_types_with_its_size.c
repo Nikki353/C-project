@@ -17,14 +17,14 @@ Range: -9223372036854775808 to 9223372036854775807
 
 
 2. Floating Point Data Types
+
 float: Typically 4 bytes (32 bits).
-
 Range: Approximately -3.4E38 to 3.4E38 with 7 significant digits.
+
 double: Usually 8 bytes (64 bits).
-
 Range: Approximately -1.7E308 to 1.7E308 with 15 significant digits.
-long double: Size and range depend on the compiler and system.
 
+long double: Size and range depend on the compiler and system.
 Range: Approximately -1.1E4932 to 1.1E4932 with 19 significant digits.
 
 
