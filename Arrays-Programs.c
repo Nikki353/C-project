@@ -4,8 +4,6 @@ Arrays in C are a collection of elements of the same data type stored at contigu
 Program Explanation:
 This program calculates the sum of all elements in an integer array.
 
-
-
 #include <stdio.h>
 
 int main() {
@@ -34,13 +32,11 @@ int main() {
 
 Output:
 
-
 Array elements: 1 2 3 4 5 
 Sum of array elements: 15
 
 
 Explanation:
-
 
 Introduction to Arrays:
 
@@ -72,8 +68,6 @@ Then it calculates the sum of these elements (1 + 2 + 3 + 4 + 5 = 15) and prints
 2. Finding Largest Element in Array
 Program Explanation:
 This program finds the largest element in an integer array.
-
-
 
 
 #include <stdio.h>
@@ -193,8 +187,6 @@ It then prints the elements of arr2: 1 2 3 4 5.
 Program Explanation:
 This program reverses the order of elements in an integer array.
 
-
-
 #include <stdio.h>
 
 int main() {
@@ -226,9 +218,7 @@ int main() {
     return 0;
 }
 
-
 Output:
-
 
 Original array: 1 2 3 4 5 
 Reversed array: 5 4 3 2 1 
@@ -262,7 +252,6 @@ It then reverses the array to {5, 4, 3, 2, 1} and prints it.
 
 Program Explanation:
 This program searches for a specific element in an integer array.
-
 
 
 #include <stdio.h>
@@ -299,8 +288,6 @@ int main() {
     return 0;
 }
 
-
-
 Output:
 
 
@@ -333,9 +320,7 @@ It then searches for the element 3 and prints Element 3 found in array. since 3 
 
 ====================================================================================================================
 
-
 6. Sorting an Array (Bubble Sort)
-
 
 Program Explanation:
 This program sorts elements of an integer array in ascending order using bubble sort.
@@ -484,7 +469,6 @@ The program merges {1, 3, 5, 7, 9} and {2, 4, 6, 8, 10} into a single sorted arr
 
 ====================================================================================================================
 
-
 8. Finding Duplicate Elements in an Array
 Program Explanation:
 This program finds and prints duplicate elements in an integer array.
@@ -519,8 +503,6 @@ int main() {
     return 0;
 }
 
-
-
 Output:
 
 
@@ -552,7 +534,6 @@ The program first prints the array elements {2, 4, 4, 1, 3, 1, 5, 3}.
 It then identifies and prints the duplicate elements {4, 1, 3} present in the array.
 
 ====================================================================================================================
-
 
 9. Calculating Average of Array Elements
 
@@ -588,15 +569,11 @@ int main() {
     return 0;
 }
 
-
-
 Output:
 
 
 Array elements: 10 20 30 40 50 
 Average of array elements: 30.00
-
-
 
 
 Explanation:
@@ -626,7 +603,6 @@ The program first prints the array elements {10, 20, 30, 40, 50}.
 It then calculates and prints the average of these elements ((10 + 20 + 30 + 40 + 50) / 5 = 30.00).
 
 ====================================================================================================================
-
 
 10. Removing Duplicate Elements from an Array
 
@@ -709,4 +685,481 @@ Output Explanation:
 
 The program first prints the original array {1, 2, 2, 3, 4, 4, 5}.
 It then removes the duplicate elements, resulting in the array {1, 2, 3, 4, 5}, which it prints as the output.
+
+====================================================================================================================
+
+11. Left-aligned Triangle Pattern
+Program Explanation:
+This program generates a left-aligned triangle pattern using arrays.
+
+
+#include <stdio.h>
+
+int main() {
+    // Introduction: Triangle size input
+    int size = 5;  // Size of the triangle
+    
+    // Program: Generating left-aligned triangle pattern
+    printf("Left-aligned Triangle Pattern:\n");
+    for (int i = 1; i <= size; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+Output:
+
+
+Left-aligned Triangle Pattern:
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+
+Explanation:
+Program Explanation:
+
+Triangle Size Input:
+
+int size = 5; specifies the number of rows in the triangle.
+Generating Left-aligned Triangle:
+
+Uses nested loops where the outer loop (for (int i = 1; i <= size; i++)) controls the number of rows.
+The inner loop (for (int j = 1; j <= i; j++)) prints * characters based on the current row number i.
+Output Explanation:
+
+The program prints a left-aligned triangle pattern with * characters aligned to the left, forming a triangle shape with 5 rows.
+
+====================================================================================================================
+
+12. Right-aligned Triangle Pattern
+Program Explanation:
+This program generates a right-aligned triangle pattern using arrays.
+
+
+#include <stdio.h>
+
+int main() {
+    // Introduction: Triangle size input
+    int size = 5;  // Size of the triangle
+    
+    // Program: Generating right-aligned triangle pattern
+    printf("Right-aligned Triangle Pattern:\n");
+    for (int i = 1; i <= size; i++) {
+        for (int j = 1; j <= size - i; j++) {
+            printf("  ");  // Print spaces for alignment
+        }
+        for (int j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+Output:
+
+
+Right-aligned Triangle Pattern:
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * *
+
+Explanation:
+Program Explanation:
+
+Triangle Size Input:
+
+int size = 5; specifies the number of rows in the triangle.
+Generating Right-aligned Triangle:
+
+Uses nested loops where the outer loop (for (int i = 1; i <= size; i++)) controls the number of rows.
+The first inner loop (for (int j = 1; j <= size - i; j++)) prints spaces to align the triangle to the right.
+The second inner loop (for (int j = 1; j <= i; j++)) prints * characters based on the current row number i.
+Output Explanation:
+
+The program prints a right-aligned triangle pattern with * characters aligned to the right, forming a triangle shape with 5 rows.
+
+
+====================================================================================================================
+
+
+13. Upper Triangular Matrix
+Program Explanation:
+This program generates an upper triangular matrix using arrays.
+
+
+#include <stdio.h>
+
+int main() {
+    // Introduction: Matrix size input
+    int size = 5;  // Size of the matrix
+    
+    // Program: Generating upper triangular matrix
+    printf("Upper Triangular Matrix:\n");
+    for (int i = 1; i <= size; i++) {
+        for (int j = 1; j <= size; j++) {
+            if (j >= i) {
+                printf("* ");
+            } else {
+                printf("  ");  // Print spaces for the lower triangle
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+Output:
+
+
+Upper Triangular Matrix:
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        *
+Explanation:
+Program Explanation:
+
+Matrix Size Input:
+
+int size = 5; specifies the size of the matrix (number of rows and columns).
+Generating Upper Triangular Matrix:
+
+Uses nested loops where the outer loop (for (int i = 1; i <= size; i++)) controls the rows.
+The inner loop (for (int j = 1; j <= size; j++)) iterates through columns.
+Prints * if the column index j is greater than or equal to the row index i, otherwise prints spaces.
+Output Explanation:
+
+The program prints an upper triangular matrix where * characters form the upper triangle, and spaces form the lower triangle.
+
+
+====================================================================================================================
+
+14. Lower Triangular Matrix
+Program Explanation:
+This program generates a lower triangular matrix using arrays.
+
+
+#include <stdio.h>
+
+int main() {
+    // Introduction: Matrix size input
+    int size = 5;  // Size of the matrix
+    
+    // Program: Generating lower triangular matrix
+    printf("Lower Triangular Matrix:\n");
+    for (int i = 1; i <= size; i++) {
+        for (int j = 1; j <= size; j++) {
+            if (j <= i) {
+                printf("* ");
+            } else {
+                printf("  ");  // Print spaces for the upper triangle
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+Output:
+
+Lower Triangular Matrix:
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+Explanation:
+Program Explanation:
+
+Matrix Size Input:
+
+int size = 5; specifies the size of the matrix (number of rows and columns).
+Generating Lower Triangular Matrix:
+
+Uses nested loops where the outer loop (for (int i = 1; i <= size; i++)) controls the rows.
+The inner loop (for (int j = 1; j <= size; j++)) iterates through columns.
+Prints * if the column index j is less than or equal to the row index i, otherwise prints spaces.
+Output Explanation:
+
+The program prints a lower triangular matrix where * characters form the lower triangle, and spaces form the upper triangle.
+
+
+====================================================================================================================
+
+15. Identity Matrix
+Program Explanation:
+This program generates an identity matrix using arrays.
+
+
+#include <stdio.h>
+
+int main() {
+    // Introduction: Matrix size input
+    int size = 4;  // Size of the matrix (4x4)
+    
+    // Program: Generating identity matrix
+    printf("Identity Matrix:\n");
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (i == j) {
+                printf("1 ");
+            } else {
+                printf("0 ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+Identity Matrix:
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+
+
+Explanation:
+Program Explanation:
+
+Matrix Size Input:
+
+int size = 4; specifies the size of the matrix (4x4 in this case).
+Generating Identity Matrix:
+
+Uses nested loops where the outer loop (for (int i = 0; i < size; i++)) controls the rows.
+The inner loop (for (int j = 0; j < size; j++)) iterates through columns.
+Prints 1 if the row index i is equal to the column index j (diagonal), otherwise prints 0.
+Output Explanation:
+
+The program prints an identity matrix where 1 appears on the diagonal (from top-left to bottom-right) and 0 elsewhere.
+
+
+====================================================================================================================
+16. Diagonal Matrix
+Program Explanation:
+This program generates a diagonal matrix using arrays.
+
+
+#include <stdio.h>
+
+int main() {
+    // Introduction: Matrix size input
+    int size = 4;  // Size of the matrix (4x4)
+    int diagonal[] = {1, 2, 3, 4};  // Diagonal elements
+    
+    // Program: Generating diagonal matrix
+    printf("Diagonal Matrix:\n");
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (i == j) {
+                printf("%d ", diagonal[i]);
+            } else {
+                printf("0 ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+Output:
+
+Diagonal Matrix:
+1 0 0 0 
+0 2 0 0 
+0 0 3 0 
+0 0 0 4 
+
+Explanation:
+Program Explanation:
+
+Matrix Size Input:
+
+int size = 4; specifies the size of the matrix (4x4 in this case).
+int diagonal[] = {1, 2, 3, 4}; defines the diagonal elements of the matrix.
+Generating Diagonal Matrix:
+
+Uses nested loops where the outer loop (for (int i = 0; i < size; i++)) controls the rows.
+The inner loop (for (int j = 0; j < size; j++)) iterates through columns.
+Prints the element from diagonal array corresponding to the current row index i and column index j if they are equal, otherwise prints 0.
+Output Explanation:
+
+The program prints a diagonal matrix where elements from the diagonal array appear on the main diagonal, and 0 appears elsewhere.
+
+
+====================================================================================================================
+
+17. Symmetric Matrix
+Program Explanation:
+This program checks if a matrix is symmetric using arrays.
+
+
+
+#include <stdio.h>
+#include <stdbool.h>  // Include for boolean data type
+
+// Function to check if matrix is symmetric
+bool isSymmetric(int mat[][3], int size) {
+    // Checking symmetric condition
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (mat[i][j] != mat[j][i]) {
+                return false;  // Not symmetric if any element is not equal to its transpose
+            }
+        }
+    }
+    return true;  // Matrix is symmetric
+}
+
+int main() {
+    // Introduction: Matrix input
+    int size = 3;  // Size of the matrix (3x3)
+    int matrix[3][3] = {{1, 2, 3}, 
+                        {2, 4, 5}, 
+                        {3, 5, 6}};  // Symmetric matrix
+    
+    // Output: Printing the matrix
+    printf("Matrix:\n");
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            printf("%d ", matrix[i][j]);  // Accessing and printing each element of the matrix
+        }
+        printf("\n");
+    }
+
+    // Program: Checking if matrix is symmetric
+    if (isSymmetric(matrix, size)) {
+        printf("Matrix is symmetric.\n");
+    } else {
+        printf("Matrix is not symmetric.\n");
+    }
+
+    return 0;
+}
+
+
+Output:
+
+
+Matrix:
+1 2 3 
+2 4 5 
+3 5 6 
+Matrix is symmetric.
+Explanation:
+Program Explanation:
+
+Matrix Input:
+
+int size = 3; specifies the size of the matrix (3x3 in this case).
+int matrix[3][3] defines the elements of the matrix.
+Printing Matrix:
+
+Uses nested loops to print the matrix elements.
+Checking Symmetric Matrix:
+
+bool isSymmetric(int mat[][3], int size) is a function that checks if the matrix mat of size size x size is symmetric.
+Iterates through the matrix and checks if mat[i][j] is equal to mat[j][i].
+Returns true if the matrix is symmetric, otherwise returns false.
+Output Explanation:
+
+The program prints the matrix and then checks if it is symmetric (matrix[3][3] = {{1, 2, 3}, {2, 4, 5}, {3, 5, 6}}), which it confirms to be true.
+
+
+====================================================================================================================
+
+18. Transpose of a Matrix
+Program Explanation:
+This program computes the transpose of a matrix using arrays.
+
+#include <stdio.h>
+
+int main() {
+    // Introduction: Matrix size input
+    int rows = 3, cols = 2;  // Rows and columns of the matrix
+    int matrix[3][2] = {{1, 2}, 
+                        {3, 4}, 
+                        {5, 6}};  // Matrix to transpose
+    
+    // Output: Printing the original matrix
+    printf("Original Matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d ", matrix[i][j]);  // Accessing and printing each element of the original matrix
+        }
+        printf("\n");
+    }
+
+    // Program: Computing the transpose of the matrix
+    int transpose[2][3];  // Resultant transpose matrix
+    for (int i = 0; i < cols; i++) {
+        for (int j = 0; j < rows; j++) {
+            transpose[i][j] = matrix[j][i];  // Computing each element of the transpose matrix
+        }
+    }
+
+    // Output: Printing the transpose of the matrix
+    printf("Transpose Matrix:\n");
+    for (int i = 0; i < cols; i++) {
+        for (int j = 0; j < rows; j++) {
+            printf("%d ", transpose[i][j]);  // Accessing and printing each element of the transpose matrix
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+Output:
+
+Original Matrix:
+1 2 
+3 4 
+5 6 
+Transpose Matrix:
+1 3 5 
+2 4 6 
+
+
+Explanation:
+Program Explanation:
+
+Matrix Input:
+
+int rows = 3, cols = 2; specifies the number of rows and columns of the matrix.
+int matrix[3][2] defines the elements of the matrix.
+Printing Original Matrix:
+
+Uses nested loops to print the original matrix elements.
+Computing Transpose of Matrix:
+
+Declares transpose[2][3] to store the transpose matrix.
+Uses nested loops to compute each element of the transpose matrix by swapping rows and columns.
+Output Explanation:
+
+The program prints the original matrix and its transpose (matrix[3][2] = {{1, 2}, {3, 4}, {5, 6}}), demonstrating how to compute and print the transpose of a matrix.
+
+
 Each of these examples provides a structured approach to solving common problems with arrays in C, such as reversing arrays, searching for elements, sorting arrays, merging two sorted arrays, finding duplicate elements, calculating averages, and removing duplicates. These programs showcase different strategies for manipulating and working with array data structures effectively.
