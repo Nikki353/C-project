@@ -78,3 +78,111 @@ Return Statement:
 
 Function Scope: 
         Variables declared within a function are local to that function and can't be accessed outside of it.
+
+
+
+==================================================================
+
+Example Program: Arithmetic Operations Using Functions
+
+#include <stdio.h>
+
+// Function declarations
+int add(int a, int b);
+int subtract(int a, int b);
+int multiply(int a, int b);
+float divide(int a, int b);
+
+int main() {
+    int num1, num2;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Addition
+    int sum = add(num1, num2);
+    printf("Sum: %d\n", sum);
+
+    // Subtraction
+    int difference = subtract(num1, num2);
+    printf("Difference: %d\n", difference);
+
+    // Multiplication
+    int product = multiply(num1, num2);
+    printf("Product: %d\n", product);
+
+    // Division
+    float quotient = divide(num1, num2);
+    printf("Quotient: %.2f\n", quotient);
+
+    return 0;
+}
+
+// Function definitions
+int add(int a, int b) {
+    return a + b;
+}
+
+int subtract(int a, int b) {
+    return a - b;
+}
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+float divide(int a, int b) {
+    if (b == 0) {
+        printf("Error: Division by zero\n");
+        return 0; // Error case, returning 0
+    } else {
+        return (float)a / b; // Typecasting to float for accurate division
+    }
+}
+
+Explanation:
+
+Function Declarations:
+
+Each arithmetic operation (add, subtract, multiply, divide) is declared with its respective return type (int for addition, subtraction, multiplication; float for division) and parameters (int a, int b).
+
+
+Main Function:
+
+Prompts the user to enter two integers (num1 and num2).
+Calls each arithmetic function with num1 and num2 as arguments and stores the returned results.
+Prints the results of each operation (Sum, Difference, Product, Quotient).
+
+
+Function Definitions:
+
+Each function (add, subtract, multiply, divide) performs its respective arithmetic operation on the provided parameters (a and b).
+add(a, b) returns the sum of a and b.
+subtract(a, b) returns the difference of a and b.
+multiply(a, b) returns the product of a and b.
+divide(a, b) performs division of a by b and returns the quotient as a float. It checks for division by zero and handles the error case by printing an error message and returning 0.
+
+
+Sample Output:
+
+Enter two numbers: 10 5
+Sum: 15
+Difference: 5
+Product: 50
+Quotient: 2.00
+
+
+Key Points:
+
+Return Types: 
+
+    Each function returns a value of the specified type (int or float).
+
+Function Parameters: 
+    Functions accept parameters (a and b) which are used to perform the operations.
+
+Error Handling: 
+    The divide function checks if b is zero before performing the division operation to avoid a division by zero error..
+
+
+
+
